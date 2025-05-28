@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Modelo 3D con Imagen de Precarga</title>
+  <!-- Importa el script de model-viewer -->
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+    model-viewer {
+      width: 80vw;
+      height: 80vh;
+      background-color: #fff;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <model-viewer 
+      src="ruta_modelo.glb" 
+      alt="Un modelo 3D" 
+      auto-rotate 
+      camera-controls 
+      poster="Mercurio.jpg"
+      exposure="1"
+      shadow-intensity="1">
+  </model-viewer>
+</body>
+</html>
