@@ -131,6 +131,37 @@ body, html {
 <div class="w3-container" id="where" style="padding-bottom:32px;">
   <div class="w3-content" style="max-width:700px">
     <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHERE TO FIND US</span></h5>
+      <title>Visualización de Modelo 3D</title>
+  <!-- Incluye el script para model-viewer -->
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+    model-viewer {
+      width: 80vw;
+      height: 80vh;
+      background-color: #fff;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <!-- Reemplaza "ruta_modelo.glb" con la URL o ruta de tu modelo 3D -->
+  <model-viewer 
+      src="ruta_modelo.glb" 
+      alt="Un modelo 3D" 
+      auto-rotate 
+      camera-controls
+      poster="imagenes/Mercurio.jpg"
+      exposure="1"
+      shadow-intensity="1">
+  </model-viewer>
     <p>Find us at some address at some place.</p>
     <img src="imagenes/map.jpg" class="w3-image" style="width:100%">
     <p><span class="w3-tag">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
