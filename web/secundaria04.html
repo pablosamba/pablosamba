@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("imagenes/Mercurio.jpg");
+  min-height: 75%;}
+
+.menu {
+  display: none;
+}
+</style>
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="secundaria03.html" class="w3-button w3-block w3-black">Inicio</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">Idea principal</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">Dato curioso</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">Historia</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">La Vía Láctea</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">Venus</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">Planetas interiores</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Sobre Venus</span></h5>
+    <p>De los cuatros planetas interiores. Mercurio es un planeta muy denso y el más pequeño. Su estructura interna esta dominada por un enorme núcleo de hierro</p>
+    <p>Al ser el planeta más cercano al Sol, experimenta variaciones extremas en la temperatura de su superficie entre 180ºC y los 430ºC.Cuenta con regiones en sombra en sus polos que nunca veran la luz solar, por lo tanto estan cubiertos de hielo.</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i> La superficie de Mercurio, antigua y llena de cráteres, muestra signos de un pasado volcáncico y actividad tectonica y esta afectada por un entorno espacial muy adverso.</i></p>
+      <p></p>
+    </div>
+    <p><strong></strong> everyday from 6am to 5pm.</p>
+    <p><strong>Address:</strong> 15 Adr street, 5015, NY</p>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Caracteristicas</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">Dato curioso</a>
+        <div class="w3-col s6 tablink"></div>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">¿Sabias que?</a>
+        <div class="w3-col s6 tablink"></div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Diametro</h5>
+      <p class="w3-text-grey">4879km</p><br>
+    
+      <h5>Área superficial</h5>
+      <p class="w3-text-grey">74,8 millones de kilómetros cuadrados</p><br>
+    
+      <h5>Gravedad</h5>
+      <p class="w3-text-grey">3,7m/s²</p><br>
+    
+      <h5>Masa</h5>
+      <p class="w3-text-grey">3,3x10²³kg</p><br>
+    
+      <h5>Densidad</h5>
+      <p class="w3-text-grey">5430kg/m³</p>
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Distancia al Sol</h5>
+      <p class="w3-text-grey">46.001.200-69.816.900km</p><br>
+    
+      <h5>Irradiancia solar</h5>
+      <p class="w3-text-grey">6.272-14.448W/m²</p><br>
+      
+        <h5>Lunas</h5>
+      <p class="w3-text-grey">No presenta lunas</p><br>
+  
+    
+      <h5>Dia</h5>
+      <p class="w3-text-grey">Mercurio necesita 58 días para dar una vuelta sobre su eje</p><br>
+    
+      <h5>Año</h5>
+      <p class="w3-text-grey">88 dias terrestres para orbitar el Sol(perido orbital)</p><br>
+    
+      <h5>Temperatura superficial</h5>
+      <p class="w3-text-grey">-180ºC a +430ºC</p>
+    </div>  
+    <img src="imagenes/Mercurio01.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+ 
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Historia</span></h5>
+
+    <p>No se sabe con certeza: Pero la primera observación registrada fue en el 265 a.C. Varios años despues, los primeros astronomos del siglo XVII observaron a Mercurio a traves de un telescopio entre ellos destacaron Galileo Galilei y Thomas Harriot</p>
+    <a href="https://museovirtual.csic.es/salas/luz/luz3.htm">Mas información aqui</a>
+    <img src="imagenes/map.jpg" class="w3-image" style="width:100%">
+    <p><span class="w3-tag"></span>Mercurio es único en el Sistema Solar, ya que gira tres veces sobre su propio eje por cada dos orbitas alrededor del Sol. Así, un punto cualquiera del planeta experimenta un día solar cada dos años. </p>
+    
+<!-- End page content -->
+</div>
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+  </script>
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Basado en <a href="https://www.w3schools.com/w3css/tryw3css_templates_cafe.htm" title="W3.CSS" target="_blank" class="w3-hover-text-green">esta plantilla</a></p>
+</footer>
+</body>
+</html>
