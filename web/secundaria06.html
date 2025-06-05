@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("imagenes/venus");
+  min-height: 75%;}
+
+.menu {
+  display: none;
+}
+</style>
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="secundaria03.html" class="w3-button w3-block w3-black">Inicio</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">Idea principal</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">Dato curioso</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">Historia</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">La Vía Láctea</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">Venus</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">Planetas interiores</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Sobre Venus</span></h5>
+    <p>Venus es el segundo planeta interior del sistema solar es el planeta mas calido del sistema solar ademas presenta montañas y volcanes(Mas de 1.600 volcanes), por otro lado Venus es diferente al resto de sus planeta ya que </p>
+    <p>gira a la direccion contraria con respecto a otros planetas. Venus tarda 243 dias en girar solo una vez.Debido a que esta cerca del Sol, un año pasa muy rapido. Venus tarda 225 días terrestres en dar toda la vuelta alrededor del Sol</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>Venus siempre esta cubierto por un velo de nubes blanco-amarillentas. En su atmosfera contiene dióxido de carbono y las nubes contiene ácido sulfúrico</i></p>
+      <p></p>
+    </div>
+    <p><strong>Estructura</strong></p>
+     <img src="imagenes/venus2.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+    <p><strong>Al estar el eje de rotación tan inclinado(casi 180º), El Polo Norte esta "en el Sur" y viceversa. Esto hace que Venus gire sobres sí mismo lentamente en un movimiento retógrado, al contrario 
+    que los otros planetas.</strong></p>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Caracteristicas</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">Dato curioso</a>
+        <div class="w3-col s6 tablink"></div>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">¿Sabias que?</a>
+        <div class="w3-col s6 tablink"></div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Distancia desde el Sol</h5>
+      <p class="w3-text-grey">108 millones de km</p><br>
+    
+      <h5>Diamentro </h5>
+      <p class="w3-text-grey">12.104Km</p><br>
+    
+      <h5>Traslación</h5>
+      <p class="w3-text-grey">225 días</p><br>
+    
+      <h5>Temperatura</h5>
+      <p class="w3-text-grey">460ºC</p><br>
+    
+      <h5>Satelites</h5>
+      <p class="w3-text-grey">No tiene</p>
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Inclinación axial</h5>
+      <p class="w3-text-grey">177,4º</p><br>
+    
+      <h5>Radio</h5>
+      <p class="w3-text-grey">6050km</p><br>
+      
+        <h5>Lunas</h5>
+      <p class="w3-text-grey">No presenta lunas</p><br>
+  
+    
+      <h5>Nombre</h5>
+      <p class="w3-text-grey">El nombre de Venus procede de la diosa romana del amor y la belleza </p><br>
+    
+      <h5></h5>
+      <p class="w3-text-grey"></p><br>
+    
+      <h5></h5>
+      <p class="w3-text-grey"></p>
+    </div>  
+    <img src="imagenes/venus3.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+    <strong>Imagen de un crater en Venus</strong>
+  </div>
+</div>
+ 
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Historia</span></h5>
+
+    <p>Se conoce su existencia desde la antiguedad porque no es necasario usar telescopios avanzados para verlo</p>
+    <a href=></a>
+    <img src="" class="w3-image" style="width:100%">
+    <p><span class="w3-tag"></span> A lo largo del tiempo, ha rebido visitas de varias naves espaciales: <br>
+      -Mariner 2,<br> 
+      -Mariner 5.<br>
+      -Mariner 10<br>
+      -Pionerr Venus 1<br>
+      -Magallanes(orbitador)<br>
+    </p>
+    
+<!-- End page content -->
+</div>
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+  </script>
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Basado en <a href="https://www.w3schools.com/w3css/tryw3css_templates_cafe.htm" title="W3.CSS" target="_blank" class="w3-hover-text-green">esta plantilla</a></p>
+</footer>
+</body>
+</html>
